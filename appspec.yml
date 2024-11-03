@@ -7,13 +7,13 @@ hooks:
   AfterInstall:
     - timeout: 300
       runas: ec2-user
-      location: script.sh tr/a200206-IDT_RESTTests
+      location: script.sh tr/a200206-IDT_RESTTests FT_API_Rest_test.yml
     - timeout: 300
       runas: ec2-user
-      location: script.sh tr/a200206-IDT_WSTests
+      location: script.sh tr/a200206-IDT_WSTests FT_WS_Rest_test.yml
     - timeout: 300
       runas: ec2-user
-      location: script.sh tr/a200206_IDT-RestPython
+      location: script.sh tr/a200206_IDT-RestPython FT_Python_Rest_Test.yml
     - timeout: 300
       runas: ec2-user
-      location: script.sh tr/a200206-IDT_UI-automation
+      location: script.sh tr/a200206-IDT_UI-automation FT_UI_Automation_test.yml

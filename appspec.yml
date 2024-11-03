@@ -1,0 +1,19 @@
+version: 0.0
+os: linux
+files:
+  - source: /script.sh
+    destination: /home/ec2-user/
+hooks:
+  AfterInstall:
+    - timeout: 300
+      runas: ec2-user
+      location: script.sh tr/a200206-IDT_RESTTests
+    - timeout: 300
+      runas: ec2-user
+      location: script.sh tr/a200206-IDT_WSTests
+    - timeout: 300
+      runas: ec2-user
+      location: script.sh tr/a200206_IDT-RestPython
+    - timeout: 300
+      runas: ec2-user
+      location: script.sh tr/a200206-IDT_UI-automation
